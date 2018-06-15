@@ -41,8 +41,6 @@ public class JobController {
 
 
         if (errors.hasErrors()) {
-            model.addAttribute(new JobForm());
-            model.addAttribute("errors", errors);
             return "new-job";
         }
         // TODO #6 - Validate the JobForm model, and if valid, create a
